@@ -8,7 +8,7 @@ const Navbar = () => {
         <img src={logo} alt='modernarc-architecture' />
       </div>
       <div className='links'>
-        <ul>
+        <ul className='link-list'>
           <li>
             <a href='#'>Anasayfa</a>
           </li>

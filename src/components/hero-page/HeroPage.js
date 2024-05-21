@@ -1,9 +1,13 @@
-import React from 'react'
+import Navbar from '../navbar/Navbar';
+import Slider from '../slider/Slider';
 
 const HeroPage = () => {
   return (
-    <div>HeroPage</div>
-  )
-}
+    <div className='hero-container'>
+      <Navbar />
+      <Slider />
+    </div>
+  );
+};
 
-export default HeroPage
+export default HeroPage;

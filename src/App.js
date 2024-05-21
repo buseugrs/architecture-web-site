@@ -1,11 +1,9 @@
 import './App.scss';
-import Navbar from './components/navbar/Navbar';
-import HeroPage from './components/hero-page/HeroPage'
+import HeroPage from './components/hero-page/HeroPage';
 function App() {
   return (
     <div>
-      <Navbar />
-      <HeroPage/>
+      <HeroPage />
     </div>
   );
 }

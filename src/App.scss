@@ -8,8 +8,6 @@
 .hero-container {
   height: 100vh;
   position: relative;
-
-
 }
 
 .navbar-container {
@@ -21,14 +19,14 @@
   padding: 1rem 2rem;
   align-items: center;
 
-  .link-list{
+  .link-list {
     display: flex;
     gap: 0 1rem;
 
-    li{
+    li {
       list-style: none;
 
-      a{
+      a {
         text-decoration: none;
         color: #ffff;
         text-transform: uppercase;
@@ -38,27 +36,189 @@
   }
 }
 
-.carousel, .carousel-inner, .carousel-item, .carousel-item img{
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
   height: 100%;
 }
 
-.carousel-control-next, .carousel-control-prev{
-  z-index: 10;
-}
-
-.carousel-item{
+.carousel-item {
   position: relative;
 }
 
-.carousel-item img{
+.carousel-item img {
   position: absolute;
   z-index: 1;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   z-index: 2;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+// SOCIAL LINKS
+
+.social-container {
+  position: absolute;
+  z-index: 5;
+  left: 1rem;
+  font-size: 1.5rem;
+
+  top: 25rem;
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+    padding: 0 1rem;
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+//SERVICES
+.services-container {
+  display: flex;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  border: 0.5px solid #efefef;
+  flex-basis: 33.3%;
+  transition: transform 0.3s ease-in-out; /* Hover efekti için geçiş ekledik */
+
+  p {
+    text-align: center;
+    margin: 0;
+    line-height: 1.8rem;
+    font-size: 17px;
+  }
+
+  h2 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #666;
+    font-size: 26px;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+}
+.service:hover {
+  transform: translateY(-10px); /* Y ekseninde yukarı doğru 10px hareket ettirir */
+}
+
+// PROJECT GALLERY
+.flexbox {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100vw;
+  color: #fff;
+
+  &:hover {
+    img {
+      opacity: 0.7;
+    }
+  }
+
+  // Each flex item
+  .item {
+    position: relative;
+    width: 33.3%; // 3 column
+    img {
+      width: 100%;
+      display: block;
+      transition: all 0.8s;
+    }
+    .title {
+      position: absolute;
+      top: 48%;
+      left: 0;
+      width: 100%;
+      padding: 0 3%;
+      font-size: 30px;
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.42);
+    }
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// Mediaqueries
+@media (max-width: 860px) {
+  // set to 2 column
+  .flexbox {
+    height: 220vw;
+    .item {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 667px) {
+  // set to 1 column
+  .flexbox {
+    height: auto;
+    .item {
+      width: 100%;
+    }
+  }
+}
+
+//FOOTER
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding: 2rem 0;
+  border: 1px solid #666;
+
+  .form-text{
+    text-align: center;
+    font-size: 17px;
+  }
+  button{
+    border: 1px solid rgb(85, 85, 85);
+    background: none;
+    padding: 1rem;
+    color:  rgb(85, 85, 85);
+    font-size: 17px;
+  }
+}
+
+.copy-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(85, 85, 85);
+  width: 100%;
+  vertical-align: middle;
+  padding: 1.5rem;
+  color: #999;
 }

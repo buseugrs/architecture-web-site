@@ -1,6 +1,7 @@
 import React from 'react';
 import slider1 from '../../assets/slider-1.jpg';
-import Map from './Map.js';
+import Map from '../contact-page/Map.js';
+import SocialLinks from '../home-page/hero-page/social-links/SocialLinks.js';
 
 const Contact = () => {
   const position = [51.505, -0.09];
@@ -37,6 +38,7 @@ const Contact = () => {
           <p>Tel: +90 212 369 45 54</p>
           <p> Fax:+90 212 369 45 54</p>
           <p>E-mail: info@loremipsum.com.tr</p>
+          <SocialLinks />
         </div>
         <Map />
       </div>

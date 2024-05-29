@@ -18,7 +18,7 @@ L.Icon.Default.mergeOptions({
 });
 
 const Map = () => {
-  const position = [51.505, -0.09]; // Londra merkezli koordinatlar
+  const position = [41.015137, 28.979530]; // Londra merkezli koordinatlar
 
   return (
       <MapContainer

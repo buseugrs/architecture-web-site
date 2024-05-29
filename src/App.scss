@@ -58,6 +58,7 @@
 .carousel-item img {
   position: absolute;
   z-index: 1;
+  object-fit: cover;
 }
 
 .overlay {
@@ -382,3 +383,32 @@
     }
   }
 }
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 4rem 0;
+}
+
+.contact-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: last baseline;
+  h6{
+    max-width: 400px;
+  }
+}
+
+
+
+.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom{
+  border: 1px solid purple;
+  height: 100%;
+}
+.leaflet-bottom.leaflet-right, .leaflet-control-zoom.leaflet-bar.leaflet-control{
+  display: none;
+}
+

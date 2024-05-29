@@ -1,16 +1,24 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/home-page/navbar/Navbar';
+import Home from './components/home-page/Home';
+import About from './components/about-page/About';
+import Services from './components/services-page/Services';
+import Footer from './components/home-page/footer/Footer';
 import './App.scss';
-import HeroPage from './components/hero-page/HeroPage';
-import Services from './components/services/Services';
-import ProjectGallery from './components/project-gallery/ProjectGallery';
-import Footer from './components/footer/Footer';
+
 function App() {
   return (
-    <div>
-      <HeroPage />
-      <Services/>
-      <ProjectGallery/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='services' element={<Services/>}/>
+        </Routes>
+      </main>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

@@ -4,7 +4,7 @@ import ProjectIcon from '../../../assets/project-icon.png'
 const Footer = () => {
   return (
     <div className='footer-container'>
-      <div className='project-form'>
+      <div className='form'>
         <div className='form-icon'>
           <img src={ProjectIcon} alt='' width={80} />
         </div>

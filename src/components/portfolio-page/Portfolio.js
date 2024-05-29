@@ -9,6 +9,7 @@ const Portfolio = () => {
         <div className='title-image'>
           <img src={slider1} alt='modern-architecture about-us' />
           <div className='overlay'></div>
+          <h1>Portfolyo</h1>
         </div>
       </div>
       <div className='gallery-container'>

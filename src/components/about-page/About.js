@@ -9,6 +9,7 @@ const About = () => {
         <div className='title-image'>
           <img src={slider1} alt='modern-architecture about-us' />
           <div className='overlay'></div>
+          <h1>Modernarc Architecture</h1>
         </div>
       </div>
       <div className='about-container'>
@@ -18,7 +19,7 @@ const About = () => {
         <div className='text-section'>
           <div className='text'>
             <p>
-              Modern Architecture, 2010 yılında İstanbul’da kurulmuş ve hem ticari hem de konut projeleri için yenilikçi
+              ModernArc Architecture, 2010 yılında İstanbul’da kurulmuş ve hem ticari hem de konut projeleri için yenilikçi
               ve kişiye özel mimari tasarım çözümleri sunan bir mimarlık ofisidir. Tasarım süreçlerimizde estetiği ve
               işlevselliği ön planda tutarak, her projeye özgün ve yaratıcı yaklaşımlar getiriyoruz. Modern çizgilerle
               geleneksel unsurları harmanlayarak, kullanıcı dostu ve sürdürülebilir yaşam alanları yaratmaya

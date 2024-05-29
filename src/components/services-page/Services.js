@@ -15,6 +15,7 @@ const Services = () => {
         <div className='title-image'>
           <img src={slider1} alt='modern-architecture about-us' />
           <div className='overlay'></div>
+          <h1>Hizmetler</h1>
         </div>
       </div>
       <div className='services-block-container'>

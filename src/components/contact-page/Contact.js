@@ -16,23 +16,23 @@ const Contact = () => {
       </div>
       <div className='contact-forms'>
         <div className='contact-form'>
-          <i class='fa-sharp fa-regular fa-envelope'></i>
+          <i className='fa-sharp fa-regular fa-envelope'></i>
           <h3>İletişim Formu</h3>
           <p>Bilgi için bizimle iletişime geçebilirisiniz.</p>
         </div>
         <div className='project-form'>
-          <i class='fa-regular fa-building'></i>
+          <i className='fa-regular fa-building'></i>
           <h3>Proje Formu</h3>
           <p>Projeniz için fiyat teklifi alabilirsiniz.</p>
         </div>
         <div className='career-form'>
-          <i class='fa-regular fa-clipboard'></i>
+          <i className='fa-regular fa-clipboard'></i>
           <h3>Kariyer Formu</h3>
           <p>Ekibimize katılmak ister misiniz ?</p>
         </div>
       </div>
       <div className='contact-info'>
-        <div className='contact-text'>
+        <div className='contact-text'> 
           <h5>ModernArc Mimarlık</h5>
           <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, tempore. İstanbul</h6>
           <p>Tel: +90 212 369 45 54</p>

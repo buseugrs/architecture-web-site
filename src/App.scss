@@ -225,6 +225,7 @@
   flex-wrap: wrap;
   height: 100vw;
   color: #fff;
+  padding: 0 15px;
 
   &:hover {
     img {
@@ -441,7 +442,10 @@
 
 //PORTFOLIO
 .gallery-container {
-  padding: 2rem;
+  padding: 15px;
+  .flexbox{
+    padding: 0;
+  }
 }
 
 //CONTACT
@@ -592,9 +596,10 @@
 @media (max-width: 860px) {
   // set to 2 column
   .flexbox {
-    height: 220vw;
+    height: auto;
+    gap: 2rem 0;
     .item {
-      width: 50%;
+      width: 100%;
     }
   }
 }
@@ -615,13 +620,6 @@
 
 }
 @media (max-width: 667px) {
-  // set to 1 column
-  .flexbox {
-    height: auto;
-    .item {
-      width: 100%;
-    }
-  }
   .copy-right-text{
     font-size: 13px;
   }
